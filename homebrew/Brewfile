@@ -1,0 +1,6 @@
+brew 'git'
+brew 'zsh'
+brew 'bash'
+brew 'vim'
+brew 'jq'
+brew 'python'
