@@ -1,0 +1,11 @@
+filetype on
+syntax on
+colorscheme monokai
+set backspace=indent,eol,start
+set number
+
+" Autoreload vimrc
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
