@@ -1,4 +1,5 @@
 execute pathogen#infect()
+call plug#begin()
 
 " Auto-reload vimrc
 augroup reload_vimrc " {
