@@ -1,4 +1,5 @@
 execute pathogen#infect()
+call plug#begin()
 
 " Auto-reload vimrc
 augroup reload_vimrc " {
@@ -11,6 +12,7 @@ filetype on
 filetype indent on
 syntax on
 
+colorschem slate
 set smarttab      " insert tabs on the start of a line according to  shiftwidth, not tabstop
 set showmatch
 
