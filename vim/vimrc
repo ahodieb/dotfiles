@@ -11,6 +11,7 @@ filetype on
 filetype indent on
 syntax on
 
+set smarttab      " insert tabs on the start of a line according to  shiftwidth, not tabstop
 set showmatch
 
 set incsearch           " search as characters are entered
