@@ -1,28 +1,9 @@
-execute pathogen#infect()
-" Install plugins [using https://github.com/junegunn/vim-plug]
-
-call plug#begin()
-Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
-call plug#end()
-
 " Auto-reload vimrc
 augroup reload_vimrc " {
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
-colorschem slate
-set laststatus=2 "enable status bar
-set showmatch
-set ignorecase
-set smartcase		" overrides ignore-case search if searching for Upper case letters
-setlocal spell spelllang=en_us " Enable spell checks
-set number " Enable line numbers 
-set cursorline " highlight current line
-
-
-
-
+source $HOME/.vim/vimrc.d/plugins.vimrc
+source $HOME/.vim/vimrc.d/keymaps.vimrc
+source $HOME/.vim/vimrc.d/general.vimrc
