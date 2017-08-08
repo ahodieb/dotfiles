@@ -1,5 +1,9 @@
 execute pathogen#infect()
+
+" Install plugins [using https://github.com/junegunn/vim-plug]
 call plug#begin()
+Plug 'itchyny/lightline.vim'
+call plug#end()
 
 " Auto-reload vimrc
 augroup reload_vimrc " {
@@ -13,6 +17,8 @@ filetype indent on
 syntax on
 
 colorschem slate
+set laststatus=2 "enable status bar
+
 set smarttab      " insert tabs on the start of a line according to  shiftwidth, not tabstop
 set showmatch
 
