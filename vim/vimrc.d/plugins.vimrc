@@ -4,7 +4,7 @@ execute pathogen#infect()
 call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-sensib'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 call plug#end()
 
