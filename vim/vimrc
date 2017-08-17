@@ -8,4 +8,5 @@
 source $HOME/.vim/vimrc.d/augroups.vimrc
 source $HOME/.vim/vimrc.d/plugins.vimrc
 source $HOME/.vim/vimrc.d/keymaps.vimrc
+source $HOME/.vim/vimrc.d/display.vimrc
 source $HOME/.vim/vimrc.d/general.vimrc
