@@ -6,6 +6,11 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+" create splits below and to the right
+set splitbelow
+set splitright
+
+
 " Status bar
 set laststatus=2 "Required to correctly display the status bar 
 let g:lightline = {
