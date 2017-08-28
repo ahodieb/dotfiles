@@ -1,0 +1,5 @@
+let mapleader = " "
+
+map <leader>n :action GotoClass<CR>
+imap <leader>ee <Esc>
+
