@@ -1,23 +1,20 @@
-### oh-my-zsh  settings ###
-
+### oh-my-zsh settings ###
 export ZSH=/Users/hodieba/.oh-my-zsh
-ZSH_THEME="robbyrussell"
+DEFAULT_USER=$USER
+ZSH_THEME="agnoster"
 HYPHEN_INSENSITIVE="true"
-
-# ZSH_CUSTOM=/path/to/new-custom-folder
 plugins=(
-  git, zsh-completions
+  git, zsh-completions, aws
 )
-
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
+### -------------------------- ###
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+### Include dotfiles ###
+source ~/.dotfiles/zsh/functions.sh
+source ~/.dotfiles/zsh/aliases.sh
+### -------------------------- ###
 
-#######
-export PATH=$HOME/.toolbox/bin:$PATH
+### Other settings ###
+export EDITOR='vim'
+### -------------------------- ###
