@@ -1,8 +1,9 @@
 ### oh-my-zsh settings ###
 export ZSH=/Users/hodieba/.oh-my-zsh
 DEFAULT_USER=$USER
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster-mod1"
 HYPHEN_INSENSITIVE="true"
+ZSH_CUSTOM=~/.dotfiles/zsh/oh-my-zsh-custom-dir
 plugins=(
   git, zsh-completions, aws
 )
