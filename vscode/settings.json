@@ -1,0 +1,21 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.fontFamily": "MesloLGSForPowerline-Regular",
+    "terminal.integrated.fontSize": 10,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+    },
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+    ],
+    "sublimeTextKeymap.promptV3Features": true,
+    "cSpell.userWords": [
+        "dataset",
+    ],
+}
