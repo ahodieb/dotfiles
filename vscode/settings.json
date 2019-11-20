@@ -1,28 +1,156 @@
 {
-    "editor.formatOnPaste": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
+  "editor.snippetSuggestions": "top",
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.fontFamily": "MesloLGSForPowerline-Regular",
+  "terminal.integrated.fontSize": 10,
+  "window.zoomLevel": 1,
+  "workbench.startupEditor": "none",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "search.exclude": {
+    "env": true,
+    "src/*/build": true,
+    "build": true,
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  //Python
+  "[python]": {
     "editor.formatOnSave": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.snippetSuggestions": "top",
-    "files.autoSave": "afterDelay",
-    "terminal.integrated.fontFamily": "MesloLGSForPowerline-Regular",
-    "terminal.integrated.fontSize": 10,
-    //Python
-    "[python]": {
-        "editor.formatOnSave": true,
-        "editor.insertSpaces": true,
-        "editor.renderWhitespace": "all",
-        "editor.tabSize": 4,
-        "editor.rulers": [
-            120
-        ]
-    },
-    "python.pythonPath": "/usr/local/bin/python3",
-    "python.formatting.autopep8Args": [
-        "--max-line-length=120"
-    ],
-    //Plugins
-    "sublimeTextKeymap.promptV3Features": true,
-    "cSpell.userWords": [
-        "dataset",
-    ],
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 4,
+    "editor.rulers": [
+      120
+    ]
+  },
+  "python.pythonPath": "/usr/local/bin/python3",
+  "python.autoUpdateLanguageServer": true,
+  "python.autoComplete.showAdvancedMembers": true,
+  "python.workspaceSymbols.rebuildOnFileSave": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "120"
+  ],
+  //Java
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/hodieba/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
+  "java.home": "/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home",
+  "java.errors.incompleteClasspath.severity": "ignore",
+  //Plugins
+  "cSpell.userWords": [
+    "Adserver",
+    "Backend",
+    "Cooldown",
+    "Dedup",
+    "Lifecycle",
+    "Parens",
+    "Popen",
+    "Serverless",
+    "Templating",
+    "Tigger",
+    "WEBHOOK",
+    "Webapp",
+    "ahodieb",
+    "alexa",
+    "amazonaws",
+    "amzn",
+    "boto",
+    "cloudformation",
+    "cloudwatch",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codepipeline",
+    "cognito",
+    "datapipeline",
+    "dataset",
+    "datastore",
+    "deduped",
+    "deduping",
+    "deserialize",
+    "deserializer",
+    "dynamodb",
+    "elasticmapreduce",
+    "eventstream",
+    "functools",
+    "gringotts",
+    "itertools",
+    "oncall",
+    "quotemark",
+    "repos",
+    "sizmek"
+  ],
+  "files.exclude": {
+    ".viceroy": true,
+    "apollo-overrides": true,
+    "release-info": true,
+    "src/*/build": false,
+    "build": true,
+    "env": true,
+    "packageInfo*": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/*.d.ts": true,
+    "**/*.js": true,
+    "**/cdk.out": true,
+    "**/.vscode": true
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/build-tools/**": true,
+    "**/doc/**": true
+  },
+  "viceroy.doc.welcome.showAtStartup": false,
+  "viceroy.config.lastVersion": "0.23.200344",
+  "viceroy.config.internal.autoUpdate": "weekly",
+  "viceroy.config.internal.lastUpdateTime": "2019-11-20T06:04:27.413Z",
+  "viceroy.config.internal.zeroDowntimeColour": "green",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "python.jediEnabled": false,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "dart.lineLength": 150,
+  "viceroy.config.beautyMode": false,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pycodestylePath": "",
+  "git.suggestSmartCommit": false,
+  "hound.url": "http://localhost:6080",
+  "yaml.schemas": {
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.16.0/green/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.16.0/blue/assets/languages/rde/schema.json": "**/definition.yaml"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.lintTask.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "html"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
