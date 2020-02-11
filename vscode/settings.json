@@ -1,14 +1,15 @@
 {
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.renderLineHighlight": "line",
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "none",
   "editor.snippetSuggestions": "top",
   "explorer.confirmDelete": false,
   "files.autoSave": "afterDelay",
   "terminal.integrated.fontFamily": "MesloLGSForPowerline-Regular",
   "terminal.integrated.fontSize": 10,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "workbench.startupEditor": "none",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -41,17 +42,21 @@
   ],
   //Java
   "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/hodieba/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
-  "java.home": "/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home",
+  "java.home": "/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home",
   "java.errors.incompleteClasspath.severity": "ignore",
   //Plugins
   "cSpell.userWords": [
+    "ARNs",
     "Adserver",
     "Backend",
     "Cooldown",
+    "Datasets",
     "Dedup",
+    "Doron",
     "Lifecycle",
     "Parens",
     "Popen",
+    "Roadmap",
     "Serverless",
     "Templating",
     "Tigger",
@@ -81,10 +86,16 @@
     "eventstream",
     "functools",
     "gringotts",
+    "guice",
+    "integ",
     "itertools",
+    "jboss",
     "oncall",
     "quotemark",
     "repos",
+    "resteasy",
+    "servlet",
+    "signup",
     "sizmek"
   ],
   "files.exclude": {
@@ -152,5 +163,22 @@
   ],
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "insertDateString.formatDate": "DDD DD/MM/YYYY",
+  "insertDateString.formatTime": "hh:mm",
+  "insertDateString.format": "DDD DD/MM/YYYY hh:mm",
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.centerLayout": true,
+  "zenMode.fullScreen": true,
+  "files.associations": {
+    "*.txt": "markdown"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
