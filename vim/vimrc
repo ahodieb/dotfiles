@@ -11,4 +11,4 @@ source $HOME/.vim/vimrc.d/keymaps.vimrc
 source $HOME/.vim/vimrc.d/display.vimrc
 source $HOME/.vim/vimrc.d/syntax.vimrc
 source $HOME/.vim/vimrc.d/general.vimrc
-
+source $HOME/.vim/vimrc.d/abreviations.vimrc
