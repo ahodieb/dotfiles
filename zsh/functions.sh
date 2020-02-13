@@ -43,3 +43,22 @@ mpull() {
     git -C "$repo" pull --rebase --auto-stash --log &
   done
 }
+
+function zsearch() {
+    cd "$(z -l $@ | tr -s ' ' | cut -f2 -d ' ' | fzf)"
+}
+alias zl='zsearch'
+
+function fzfgrep() {
+  grep -rin $@ | fzf
+}
+
+function fzfgrep_to_editor() {
+  line="$(fzfgrep $@)"
+  file="$(echo $line | cut -f1 -d ':')"
+  line_num="$(echo $line | cut -f2 -d ':')"
+
+  open_editor_at_line $EDITOR $file $line_num
+}
+
+alias gfz="fzfgrep_to_editor"

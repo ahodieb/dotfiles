@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 ### Include dotfiles ###
 source ~/.dotfiles/zsh/functions.sh
 source ~/.dotfiles/zsh/aliases.sh
+source ~/.dotfiles/zsh/notes.sh
 ### -------------------------- ###
 
 ### Other settings ###
