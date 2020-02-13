@@ -11,3 +11,4 @@ augroup enable_spell_checking " {
     autocmd BufRead,BufNewFile *.txt setlocal spell    
 augrou END "}
 
+autocmd BufNewFile,BufRead *.txt set filetype=markdown
