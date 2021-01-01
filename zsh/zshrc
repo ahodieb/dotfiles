@@ -30,6 +30,10 @@ source /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 
 
 ### Python bin folder ###
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
 USER_BASE_PATH=$(python3 -m site --user-base)
 export PATH=$PATH:$USER_BASE_PATH/bin
 
