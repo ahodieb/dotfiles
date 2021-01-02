@@ -19,7 +19,6 @@ brew install iterm2
 
 ### Install cli tools ###
 brew install git
-brew install neovim 
 brew install jq
 ### -------------------------- ###
 
@@ -34,6 +33,10 @@ ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts/
 /tmp/fonts/install.sh
 rm -rf /tmp/fonts
+
+mkdir ~/.vim
+ln -s ~/.dotfiles/vim/vimrc.d ~/.vim/vimrc.d
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ### -------------------------- ###
 
 ### Install runtimes ###

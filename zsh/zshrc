@@ -7,4 +7,4 @@ source ~/.dotfiles/zsh/tools.sh
 source ~/.dotfiles/zsh/notes.sh
 ### -------------------------- ###
 
-export EDITOR='nvim'
+export EDITOR='vim'
