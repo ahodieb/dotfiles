@@ -1,7 +1,11 @@
 # Dotfiles
-Repo for hosting my dotfiles, useful aliases, functions and useful shortcuts 
+Repo for hosting my dotfiles and configurations.
 
-Install for mac
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/AbdallahHodieb/Dotfiles/master/install_mac.sh)"
+## Installation
+```bash
+# Mac Setup 
+# This Assumes that the default shell is zsh, if not then zsh must be installed and set as default 
+# Preferences -> Users & Groups -> Username -> right-click -> Advanced -> Login shell
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ahodieb/dotfiles/master/setup-mac.sh)"
 ```
