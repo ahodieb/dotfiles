@@ -2,14 +2,14 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.renderLineHighlight": "line",
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorModifier": "alt",
   "editor.renderWhitespace": "none",
   "editor.snippetSuggestions": "top",
   "explorer.confirmDelete": false,
   "files.autoSave": "afterDelay",
   "terminal.integrated.fontFamily": "MesloLGSForPowerline-Regular",
   "terminal.integrated.fontSize": 10,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "workbench.startupEditor": "none",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -18,7 +18,8 @@
     "src/*/build": true,
     "build": true,
     "**/node_modules": true,
-    "**/bower_components": true
+    "**/bower_components": true,
+    "**/*.code-search": true
   },
   //Python
   "[python]": {
@@ -40,6 +41,9 @@
     "--line-length",
     "120"
   ],
+  "python.linting.flake8Args": [
+    "--max-line-length=120",
+  ],
   //Java
   "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/hodieba/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
   "java.home": "/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home",
@@ -47,12 +51,14 @@
   //Plugins
   "cSpell.userWords": [
     "ARNs",
+    "Abdallah",
     "Adserver",
     "Backend",
     "Cooldown",
     "Datasets",
     "Dedup",
     "Doron",
+    "Fargate",
     "Lifecycle",
     "Parens",
     "Popen",
@@ -60,13 +66,17 @@
     "Serverless",
     "Templating",
     "Tigger",
+    "Userstore",
+    "Vertica",
     "WEBHOOK",
     "Webapp",
+    "XDCR",
     "ahodieb",
     "alexa",
     "amazonaws",
     "amzn",
     "boto",
+    "cbtransfer",
     "cloudformation",
     "cloudwatch",
     "codebuild",
@@ -74,6 +84,7 @@
     "codedeploy",
     "codepipeline",
     "cognito",
+    "couchbase",
     "datapipeline",
     "dataset",
     "datastore",
@@ -87,16 +98,23 @@
     "functools",
     "gringotts",
     "guice",
+    "heapify",
     "integ",
     "itertools",
     "jboss",
+    "kibana",
     "oncall",
+    "oring",
+    "oring the",
+    "phonescreen",
     "quotemark",
     "repos",
     "resteasy",
     "servlet",
     "signup",
-    "sizmek"
+    "sizmek",
+    "sunsetting",
+    "the"
   ],
   "files.exclude": {
     ".viceroy": true,
@@ -113,7 +131,6 @@
     "**/.DS_Store": true,
     "**/node_modules": true,
     "**/*.d.ts": true,
-    "**/*.js": true,
     "**/cdk.out": true,
     "**/.vscode": true
   },
@@ -122,18 +139,19 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
+    "**/.hg/store/**": true,
     "**/build-tools/**": true,
     "**/doc/**": true
   },
   "viceroy.doc.welcome.showAtStartup": false,
-  "viceroy.config.lastVersion": "0.23.200344",
+  "viceroy.config.lastVersion": "0.35.200852",
   "viceroy.config.internal.autoUpdate": "weekly",
-  "viceroy.config.internal.lastUpdateTime": "2019-11-20T06:04:27.413Z",
+  "viceroy.config.internal.lastUpdateTime": "2020-12-17T14:27:17.664Z",
   "viceroy.config.internal.zeroDowntimeColour": "green",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -144,30 +162,45 @@
   "java.configuration.checkProjectSettingsExclusions": false,
   "dart.lineLength": 150,
   "viceroy.config.beautyMode": false,
-  "python.linting.mypyEnabled": true,
+  "python.linting.mypyEnabled": false,
   "python.linting.pycodestylePath": "",
   "git.suggestSmartCommit": false,
   "hound.url": "http://localhost:6080",
   "yaml.schemas": {
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.35.200852/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.35.200846/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.35.200841/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.35.200839/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.34.200812/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.34.200803/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.33.200796/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.33.200789/assets/languages/rde/schema.json": "**/definition.yaml",
+    "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.33.200774/assets/languages/rde/schema.json": "**/definition.yaml",
     "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.16.0/green/assets/languages/rde/schema.json": "**/definition.yaml",
     "file:///Users/hodieba/.vscode/extensions/marklel.vscode-brazil-0.16.0/blue/assets/languages/rde/schema.json": "**/definition.yaml"
   },
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "eslint.lintTask.enable": true,
+  "eslint.codeActionsOnSave.mode": "all",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
     "html"
   ],
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+    },
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "workbench.iconTheme": "vscode-icons",
-  "insertDateString.formatDate": "DDD DD/MM/YYYY",
+  "insertDateString.formatDate": "DDD YYYY/MM/DD",
   "insertDateString.formatTime": "hh:mm",
-  "insertDateString.format": "DDD DD/MM/YYYY hh:mm",
+  "insertDateString.format": "DDD YYYY/MM/DD hh:mm",
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": true,
   "breadcrumbs.enabled": false,
@@ -178,7 +211,26 @@
   "files.associations": {
     "*.txt": "markdown"
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+  "go.formatTool": "goimports",
+"go.useLanguageServer": true,
+"python.languageServer": "Microsoft",
+"vsicons.dontShowNewVersionMessage": true,
+"java.project.importOnFirstTimeStartup": "automatic",
+"apklab.apktoolPath": "/Users/hodieba/.apklab/apktool_2.4.1.jar",
+"apklab.apkSignerPath": "/Users/hodieba/.apklab/uber-apk-signer-1.1.0.jar",
+"cmake.configureOnOpen": false,
+"[dart]": {
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.rulers": [
+    80
+  ],
+  "editor.selectionHighlight": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "onlySnippets",
+  "editor.wordBasedSuggestions": false
+},
+"cSpell.enabled": true,
+"javascript.updateImportsOnFileMove.enabled": "always",
 }

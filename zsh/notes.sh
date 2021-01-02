@@ -28,7 +28,7 @@ function _get_today_section_in_journal() {
     exit
   fi
 
-  local latest="$(grep '## \*\*.*[0-9][0-9][0-9][0-9]/[0-9][0-9]/[0-9][0-9]' $JOURNAL_FILE --line-number | head -n1 | cut -f1 -d ':')"
+  local latest="$(grep '## .*[0-9][0-9][0-9][0-9]/[0-9][0-9]/[0-9][0-9]' $JOURNAL_FILE --line-number | head -n1 | cut -f1 -d ':')"
   if [ -n "$latest" ]; then
     echo "$(expr $latest - 2)"
     exit

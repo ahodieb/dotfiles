@@ -1,54 +1,10 @@
-### oh-my-zsh settings ###
-export LANG=en_US.UTF-8
-export ZSH=/Users/hodieba/.oh-my-zsh
-ZSH_THEME="agnoster"
-HYPHEN_INSENSITIVE="true"
-DEFAULT_USER=$USER
-source $ZSH/oh-my-zsh.sh
-### -------------------------- ###
-
 ### Include dotfiles ###
+source ~/.dotfiles/zsh/oh-my-zsh.sh
 source ~/.dotfiles/zsh/functions.sh
 source ~/.dotfiles/zsh/aliases.sh
+source ~/.dotfiles/zsh/runtimes.sh
+source ~/.dotfiles/zsh/tools.sh
 source ~/.dotfiles/zsh/notes.sh
 ### -------------------------- ###
 
-### Other settings ###
-export EDITOR='vim'
-### -------------------------- ###
-
-### Other plugins  ###
-# zsh-autosuggestions
-# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
-# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# z - jump around
-# brew install z
-source /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
-### -------------------------- ###
-
-
-### Python bin folder ###
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
-USER_BASE_PATH=$(python3 -m site --user-base)
-export PATH=$PATH:$USER_BASE_PATH/bin
-### -------------------------- ###
-
-### Android SDK ###
-if [ -d "$HOME/Library/Android/sdk" ]; then
-  export ANDROID_HOME=$HOME/Library/Android/sdk
-  export PATH=$PATH:$ANDROID_HOME/tools
-  export PATH=$PATH:$ANDROID_HOME/platform-tools
-fi
-### -------------------------- ###
-
-### Flutter SDK ###
-if [ -d "$HOME/dev-tools/flutter" ]; then
-  export FLUTTER_HOME=$HOME/dev-tools/flutter
-  export PATH=$PATH:$FLUTTER_HOME/bin
-fi
-### -------------------------- ###
+export EDITOR='nvim'
