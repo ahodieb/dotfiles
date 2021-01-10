@@ -12,6 +12,8 @@ export HOMEBREW_NO_AUTO_UPDATE=1 # stop auto-update https://github.com/Homebrew/
 ### Install tools to make the terminal better
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  # Autosuggest commands based on history
+brew install coreutils 
+brew install grep --with-default-names
 brew install fzf
 brew install z # z - tool to jump around to recent directories
 brew install iterm2
