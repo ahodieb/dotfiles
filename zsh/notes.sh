@@ -1,6 +1,6 @@
 # Core notes directories & files
 export NOTES_EDITOR="code" 
-export NOTES_DIR="${HOME}/.notes"
+export NOTES_DIR="${HOME}/Notes"
 export JOURNAL_FILE="${NOTES_DIR}/journal.txt"
 
 function _open_editor_at_line(){
