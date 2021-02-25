@@ -14,7 +14,8 @@ export NVM_DIR="$HOME/.nvm"
 ### -------------------------- ###
 
 ### Include GOPATH to $PATH ###
-export PATH=$GOPATH:$PATH
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
 ### -------------------------- ###
 
 ### Android SDK ###
