@@ -18,3 +18,9 @@ ssh_to_remote_directory() {
   echo "SSH to '$1'"
   ssh "$1" -t "cd $remote_directory; \$SHELL -l"
 }
+
+# Git grep and git blam - credit to https://gist.github.com/lonnen/3101795
+who_did_it() {
+    git grep -n $1 | while IFS=: read i j k; do git blame -L $j,$j $i | cat; done
+}
+
