@@ -26,9 +26,17 @@ if [ -d "$HOME/Library/Android/sdk" ]; then
 fi
 ### -------------------------- ###
 
+export DEV_TOOLS="$HOME/dev-tools"
+
 ### Flutter SDK ###
-if [ -d "$HOME/dev-tools/flutter" ]; then
+if [ -d "$DEV_TOOLS/flutter" ]; then
   export FLUTTER_HOME=$HOME/dev-tools/flutter
   export PATH=$PATH:$FLUTTER_HOME/bin
 fi
+### -------------------------- ###
+
+
+###  GCP CLI & SDK  ###
+if [ -f "$DEV_TOOLS/google-cloud-sdk/path.zsh.inc" ]; then . "$DEV_TOOLS/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$DEV_TOOLS/google-cloud-sdk/completion.zsh.inc" ]; then . "$DEV_TOOLS/google-cloud-sdk/completion.zsh.inc"; fi
 ### -------------------------- ###
