@@ -49,7 +49,7 @@ brew install pyenv
 pyenv install 3.9.0
 pyenv global 3.9.0
 eval "$(pyenv init -)"
-pip install requests pipenv 
+pip install requests pipenv matplotlib 
 ## NodeJs
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash # https://github.com/nvm-sh/nvm#install--update-script
 nvm install --lts
