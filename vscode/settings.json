@@ -46,7 +46,7 @@
     "python.linting.flake8Args": [
         "--max-line-length=120"
     ],
-    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.typeCheckingMode": "basic",
     "java.home": "/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home",
     "java.errors.incompleteClasspath.severity": "ignore",
     //Plugins
@@ -63,6 +63,7 @@
         "Idempotence",
         "Lifecycle",
         "Livecode",
+        "Microcontroller",
         "Popen",
         "Roadmap",
         "Serverless",
@@ -70,6 +71,7 @@
         "Tigger",
         "Userstore",
         "Vertica",
+        "Vizceral",
         "WEBHOOK",
         "Webapp",
         "XDCR",
@@ -96,6 +98,7 @@
         "deserialize",
         "deserializer",
         "devo",
+        "dotfiles",
         "dynamodb",
         "elasticmapreduce",
         "eventstream",
@@ -104,21 +107,26 @@
         "gringotts",
         "groupby",
         "guice",
+        "hackathon",
         "heapify",
         "integ",
         "itertools",
         "jboss",
         "kibana",
+        "networkx",
         "oncall",
         "phonescreen",
+        "pipenv",
         "pytest",
+        "pyvis",
         "quotemark",
         "repos",
         "resteasy",
         "rsync",
         "runbook",
         "servlet",
-        "signup"
+        "signup",
+        "viewability"
     ],
     "files.exclude": {
         ".viceroy": true,
@@ -219,8 +227,16 @@
     ],
     "python.testing.pytestEnabled": true,
     "testing.enableProblemDiagnostics": true,
-    "window.zoomLevel": 1,
     "python.testing.pytestArgs": [
         "-vv --diff-type=split"
     ],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": true,
+    "workbench.editor.untitled.hint": "hidden",
 }
