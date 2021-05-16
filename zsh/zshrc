@@ -4,7 +4,6 @@ source ~/.dotfiles/zsh/functions.sh
 source ~/.dotfiles/zsh/aliases.sh
 source ~/.dotfiles/zsh/runtimes.sh
 source ~/.dotfiles/zsh/tools.sh
-source ~/.dotfiles/zsh/notes.sh
 ### -------------------------- ###
 
 export EDITOR='vim'
