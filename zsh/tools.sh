@@ -35,7 +35,7 @@ alias gfz="fzfgrep_to_editor"
 ### -------------------------- ###
 
 ### Papyrus ###
-export PAPYRUS_HOME="$HOME/PersonalDev/papyrus"
+export PAPYRUS_HOME="$HOME/PersonalDev/papyrus/bin"
 if [ -d "$PAPYRUS_HOME" ]; then
     export PATH=$PATH:$PAPYRUS_HOME
     alias j="papyrus open"
