@@ -59,7 +59,10 @@
         "Cooldown",
         "Datasets",
         "Dedup",
+        "Depprirotized",
+        "Elrond",
         "Fargate",
+        "HHMM",
         "Idempotence",
         "Lifecycle",
         "Livecode",
@@ -115,6 +118,7 @@
         "kibana",
         "networkx",
         "oncall",
+        "parallaizable",
         "phonescreen",
         "pipenv",
         "pytest",
@@ -230,13 +234,13 @@
     "python.testing.pytestArgs": [
         "-vv --diff-type=split"
     ],
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "go.toolsManagement.autoUpdate": true,
     "redhat.telemetry.enabled": true,
     "workbench.editor.untitled.hint": "hidden",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": 2,
+    "security.workspace.trust.untrustedFiles": "open",
 }
