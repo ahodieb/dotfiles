@@ -16,14 +16,14 @@ brew install coreutils
 brew install grep --with-default-names
 brew install fzf
 brew install z # z - tool to jump around to recent directories
-brew install rg
-brew install iterm2
-brew install graphviz
 ### -------------------------- ###
 
 ### Install cli tools ###
+brew install iterm2
 brew install git
 brew install jq
+brew install rg
+brew install graphviz
 ### -------------------------- ###
 
 ### Install my dotfiles ###
@@ -49,7 +49,7 @@ brew install pyenv
 pyenv install 3.9.0
 pyenv global 3.9.0
 eval "$(pyenv init -)"
-pip install requests pipenv matplotlib tabulate cookiecutter
+pip install requests pipenv matplotlib tabulate
 ## NodeJs
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash # https://github.com/nvm-sh/nvm#install--update-script
 nvm install --lts
