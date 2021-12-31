@@ -18,10 +18,10 @@ install_dotfiles() {
 
 ### Install oh my zsh tools to make the terminal better
 # sudo apt-get install zsh
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts/
-# /tmp/fonts/install.sh
-# rm -rf /tmp/fonts
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts/
+/tmp/fonts/install.sh
+rm -rf /tmp/fonts
 ### -------------------------- ###
 
 install_dotfiles
