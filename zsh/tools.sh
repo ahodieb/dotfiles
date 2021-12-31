@@ -7,7 +7,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ###  Z - Jump around  ###
 # brew install z fzf
-source /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+# source /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 
 # Fuzzy search (uzing fzf) over recent folders
 # Usage: zl <search>
