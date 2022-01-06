@@ -14,6 +14,9 @@ install_dotfiles() {
     mkdir ~/.vim
     ln -s ~/.dotfiles/vim/vimrc.d ~/.vim/vimrc.d
     ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+    
+    # Install powerline fonts for WSL
+    # https://www.ricalo.com/blog/install-powerline-windows/#install-and-configure-powerline-fonts
 }
 
 ### Install oh my zsh tools to make the terminal better
