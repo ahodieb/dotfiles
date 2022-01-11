@@ -28,10 +28,10 @@ brew install graphviz
 
 ### Install my dotfiles ###
 git clone git@github.com:ahodieb/dotfiles.git ~/.dotfiles
-rm -f ~/.dotfiles/.git/config
-ln -s ~/.dotfiles/gitconfig  ~/.dotfiles/.git/config
+git -C ~/.dotfiles config user.name "Abdallah Hodieb"
+git -C ~/.dotfiles config user.email "abdallah.hodieb@gmail.com"
 
-rm -f ~/.zshrc
+mv ~/.zshrc ~/.zshrc-pre-ahodieb-dotfiles
 ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 
 git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts/
