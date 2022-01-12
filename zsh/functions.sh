@@ -24,3 +24,8 @@ who_did_it() {
     git grep -n $1 | while IFS=: read i j k; do git blame -L $j,$j $i | cat; done
 }
 
+# Fuzzy search (uzing fzf) over recent folders
+# Usage: zl <search>
+function zfzf() {
+    cd "$(z -l $@ | tr -s ' ' | cut -f2 -d ' ' | fzf)"
+}
