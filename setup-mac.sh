@@ -9,7 +9,7 @@ set -e
   git -C ~/.dotfiles config user.name "Abdallah Hodieb" && \
   git -C ~/.dotfiles config user.email "abdallah.hodieb@gmail.com"
 
-mv ~/.zshrc ~/tmp/zshrc-pre-ahodieb-dotfiles
+mv ~/.zshrc /tmp/zshrc-pre-ahodieb-dotfiles
 ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 
 [ ! -d "${HOME}/.vim" ] && mkdir ~/.vim && \
