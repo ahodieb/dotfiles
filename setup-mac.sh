@@ -2,66 +2,26 @@
 
 set -e 
 
-### Initial setup ### 
-xcode-select --install # xcode cli tools (we need git)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" # https://brew.sh/
-brew doctor
-export HOMEBREW_NO_AUTO_UPDATE=1 # stop auto-update https://github.com/Homebrew/brew/blob/7d31a70373edae4d8e78d91a4cbc05324bebc3ba/Library/Homebrew/manpages/brew.1.md.erb#L202
-### -------------------------- ###
+[ ! -d "/opt/homebrew" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+[ ! -d "${HOME}/.oh-my-zsh" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+[ ! -d "/tmp/fonts" ] && git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts/ && /tmp/fonts/install.sh
+[ ! -d "${HOME}/.dotfiles" ] && git clone https://github.com/ahodieb/dotfiles.git ~/.dotfiles && \
+  git -C ~/.dotfiles config user.name "Abdallah Hodieb" && \
+  git -C ~/.dotfiles config user.email "abdallah.hodieb@gmail.com"
 
-### Install tools to make the terminal better
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  # Autosuggest commands based on history
-brew install coreutils 
-brew install grep --with-default-names
-brew install fzf
-brew install z # z - tool to jump around to recent directories
-### -------------------------- ###
-
-### Install cli tools ###
-brew install iterm2
-brew install git
-brew install jq
-brew install rg
-brew install graphviz
-### -------------------------- ###
-
-### Install my dotfiles ###
-git clone git@github.com:ahodieb/dotfiles.git ~/.dotfiles
-git -C ~/.dotfiles config user.name "Abdallah Hodieb"
-git -C ~/.dotfiles config user.email "abdallah.hodieb@gmail.com"
-
-mv ~/.zshrc ~/.zshrc-pre-ahodieb-dotfiles
+mv ~/.zshrc ~/tmp/zshrc-pre-ahodieb-dotfiles
 ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 
-git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts/
-/tmp/fonts/install.sh
-rm -rf /tmp/fonts
+[ ! -d "${HOME}/.vim" ] && mkdir ~/.vim && \
+ln -s ~/.dotfiles/vim/vimrc.d ~/.vim/vimrc.d && \
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc 
 
-mkdir ~/.vim
-ln -s ~/.dotfiles/vim/vimrc.d ~/.vim/vimrc.d
-ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
-### -------------------------- ###
+brew install git jq rg z fzf coreutils grep graphviz iterm2 visual-studio-code clipy golang rectangle fork
 
-### Install runtimes ###
 ## Python
 brew install pyenv 
-pyenv install 3.9.0
-pyenv global 3.9.0
-eval "$(pyenv init -)"
+pyenv install --skip-existing 3.10.1
+pyenv global 3.10.1
+eval "$(pyenv init -path)"
+pip install --upgrade pip
 pip install requests pipenv matplotlib tabulate
-## NodeJs
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash # https://github.com/nvm-sh/nvm#install--update-script
-nvm install --lts
-node --version
-
-## GoLang
-brew install golang
-### -------------------------- ###
-
-### Install applications ###
-brew install visual-studio-code
-brew install clipy # https://github.com/Clipy/Clipy
-brew install --cask rectangle # https://github.com/rxhanson/Rectangle
-brew install --cask fork
-### -------------------------- ###
