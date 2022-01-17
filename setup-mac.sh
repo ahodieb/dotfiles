@@ -2,7 +2,6 @@
 
 set -e 
 
-[ ! -d "/opt/homebrew" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 [ ! -d "${HOME}/.oh-my-zsh" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 [ ! -d "/tmp/fonts" ] && git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts/ && /tmp/fonts/install.sh
 [ ! -d "${HOME}/.dotfiles" ] && git clone https://github.com/ahodieb/dotfiles.git ~/.dotfiles && \
@@ -15,6 +14,8 @@ ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 [ ! -d "${HOME}/.vim" ] && mkdir ~/.vim && \
 ln -s ~/.dotfiles/vim/vimrc.d ~/.vim/vimrc.d && \
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc 
+
+[ ! -d "/opt/homebrew" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install git jq rg z fzf coreutils grep graphviz iterm2 visual-studio-code clipy golang rectangle fork
 
