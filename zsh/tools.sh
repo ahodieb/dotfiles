@@ -6,3 +6,8 @@ if [ -d "$PAPYRUS_HOME" ]; then
     alias vj="papyrus open --editor=vim"
 fi
 ### -------------------------- ###
+
+# https://git-fork.com
+if [ -d "/Applications/Fork.app" ]; then
+    alias fork="open -a Fork.app ."
+fi
