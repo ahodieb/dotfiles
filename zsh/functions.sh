@@ -1,3 +1,14 @@
+# Git grep and git blam - credit to https://gist.github.com/lonnen/3101795
+who-to-blame() {
+    git grep -n $1 | while IFS=: read i j k; do git blame -L $j,$j $i | cat; done
+}
+
+# Fuzzy search (uzing fzf) over recent folders
+# Usage: zz <search>
+function zz() {
+    cd "$(z -l $@ | tr -s ' ' | cut -f2 -d ' ' | fzf)"
+}
+
 # expand relative paths
 _expand_relative_path() {
   if [[ -d "$1" ]]; then
@@ -19,13 +30,3 @@ ssh_to_remote_directory() {
   ssh "$1" -t "cd $remote_directory; \$SHELL -l"
 }
 
-# Git grep and git blam - credit to https://gist.github.com/lonnen/3101795
-who_did_it() {
-    git grep -n $1 | while IFS=: read i j k; do git blame -L $j,$j $i | cat; done
-}
-
-# Fuzzy search (uzing fzf) over recent folders
-# Usage: zl <search>
-function zfzf() {
-    cd "$(z -l $@ | tr -s ' ' | cut -f2 -d ' ' | fzf)"
-}
