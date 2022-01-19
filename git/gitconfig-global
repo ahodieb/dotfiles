@@ -5,3 +5,9 @@
 	email = abdallah.hodieb@hashicorp.com
 [core]
 	excludesfile = /Users/hodieba/.dotfiles/git/gitignore-global
+
+[url "git@personal.github.com:ahodieb"]
+  insteadOf = https://github.com/ahodieb
+
+[url "git@github.com:hashicorp"]
+  insteadOf = https://github.com/hashicorp
