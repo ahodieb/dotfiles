@@ -3,3 +3,5 @@ source ~/.dotfiles/zsh/aliases.sh
 source ~/.dotfiles/zsh/runtimes.sh
 source ~/.dotfiles/zsh/tools.sh
 source ~/.dotfiles/zsh/oh-my-zsh.sh
+
+[ -f "${HOME}/.dotfiles/zsh/private.sh" ] && source ~/.dotfiles/zsh/private.sh
