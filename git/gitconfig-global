@@ -12,7 +12,12 @@
 [init]
         defaultBranch = main
 [alias]
+	s = status -sb
 	ll = log --abbrev-commit --decorate --date=relative --format=format:'%C(red)%h%C(r) —— %C(bold blue)%an%C(r): %C(white)%s%C(r) %C(dim white) %C(bold green)(%ar)%C(r) %C(bold yellow)%d%C(r)' --all
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	commit-all = !git add -A && git commit
+	commit-wip = !git add -A && git commit -m '🚧 wip'
+	undo = reset HEAD~1 --soft
 [url "git@personal.github.com:ahodieb"]
   insteadOf = https://github.com/ahodieb
 [url "git@github.com:hashicorp"]
