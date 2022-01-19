@@ -1,0 +1,7 @@
+[init]
+        defaultBranch = main
+[user]
+        name = Abdallah Hodieb
+	email = abdallah.hodieb@hashicorp.com
+[core]
+	excludesfile = /Users/hodieba/.dotfiles/git/gitignore-global

@@ -17,6 +17,13 @@ link_zsh () {
   ln -s ~/.dotfiles/zsh/zprofile ~/.zprofile
 }
 
+link_gitconfig () {
+  TMP_DIR=$(mktemp -d)
+  echo "${TMP_DIR}" >> ~/.gitconfig.bkp
+  mv ~/.gitconfig ${TMP_DIR}/gitconfig.bkp
+  ln -s ~/.dotfiles/git/gitconfig-global ~/.gitconfig
+}
+
 link_vim () {
   if [ -d "${HOME}/.vim" ]; then
     rm -rf ~/.vim ~/.vimrc
@@ -53,6 +60,7 @@ install_apps () {
 install_oh_my_zsh
 clone_dotfiles
 link_zsh
+link_gitconfig
 link_vim
 install_homebrew
 install_apps
