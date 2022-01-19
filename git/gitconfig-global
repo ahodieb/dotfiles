@@ -1,19 +1,19 @@
-[init]
-        defaultBranch = main
 [user]
-        name = Abdallah Hodieb
+	name = Abdallah Hodieb
 	email = abdallah.hodieb@hashicorp.com
 [core]
 	excludesfile = /Users/hodieba/.dotfiles/git/gitignore-global
-
-[url "git@personal.github.com:ahodieb"]
-  insteadOf = https://github.com/ahodieb
-
-[url "git@github.com:hashicorp"]
-  insteadOf = https://github.com/hashicorp
-  
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
 [submodule]
 	recurse = true
-  
+[init]
+        defaultBranch = main
 [alias]
 	ll = log --abbrev-commit --decorate --date=relative --format=format:'%C(red)%h%C(r) —— %C(bold blue)%an%C(r): %C(white)%s%C(r) %C(dim white) %C(bold green)(%ar)%C(r) %C(bold yellow)%d%C(r)' --all
+[url "git@personal.github.com:ahodieb"]
+  insteadOf = https://github.com/ahodieb
+[url "git@github.com:hashicorp"]
+  insteadOf = https://github.com/hashicorp
