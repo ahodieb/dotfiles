@@ -4,4 +4,5 @@ source ~/.dotfiles/zsh/runtimes.sh
 source ~/.dotfiles/zsh/tools.sh
 source ~/.dotfiles/zsh/oh-my-zsh.sh
 
-[ -f "${HOME}/.dotfiles/zsh/private.sh" ] && source ~/.dotfiles/zsh/private.sh
+[ -f "${HOME}/.dotfiles/hashicorp/zshrc.zsh" ] && source ~/.dotfiles/hashicorp/zshrc.zsh
+
