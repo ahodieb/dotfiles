@@ -17,6 +17,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-
+Plug 'junegunn/goyo.vim'
 call plug#end()
