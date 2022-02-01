@@ -2,7 +2,7 @@ set number " Enable line numbers
 set cursorline " highlight current line
 
 " Color theme
-set background=dark
+set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 
