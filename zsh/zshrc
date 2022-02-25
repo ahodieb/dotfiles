@@ -1,3 +1,4 @@
+source ~/.dotfiles/zsh/p10k.zsh
 source ~/.dotfiles/zsh/functions.sh
 source ~/.dotfiles/zsh/aliases.sh
 source ~/.dotfiles/zsh/runtimes.sh
