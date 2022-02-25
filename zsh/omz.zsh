@@ -6,7 +6,8 @@ else
   HYPHEN_INSENSITIVE="true"
   ZSH_DISABLE_COMPFIX=true
   
-  ZSH_THEME="agnoster"
+  # ZSH_THEME="agnoster"
+  ZSH_THEME="powerlevel10k/powerlevel10k"
   plugins=(
     z
     fzf
