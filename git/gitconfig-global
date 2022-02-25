@@ -24,3 +24,7 @@
   insteadOf = https://github.com/ahodieb
 [url "git@github.com:hashicorp"]
   insteadOf = https://github.com/hashicorp
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
