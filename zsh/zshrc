@@ -1,8 +1,3 @@
 source ~/.dotfiles/zsh/p10k.zsh
-source ~/.dotfiles/zsh/functions.sh
-source ~/.dotfiles/zsh/aliases.sh
-source ~/.dotfiles/zsh/runtimes.sh
 source ~/.dotfiles/zsh/tools.sh
 source ~/.dotfiles/zsh/omz.zsh
-
-[ -f "${HOME}/.dotfiles/hashicorp/zshrc.zsh" ] && source ~/.dotfiles/hashicorp/zshrc.zsh
