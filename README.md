@@ -6,4 +6,5 @@ This Assumes that the default shell is zsh, if it is not change it from `Prefere
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ahodieb/dotfiles/master/install.sh)"
+brew bundle --file="~/.dotfiles/Brewfile" install
 ```
