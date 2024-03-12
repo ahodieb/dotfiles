@@ -1,0 +1,26 @@
+[core]
+  editor = vim
+	excludesfile = ~/.dotfiles/gitignore
+[pull]
+	rebase = true
+[rebase]
+  ff = only
+	autoStash = true
+[push]
+  default = upstream
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[advice]
+	skippedCherryPicks = false
+[alias]
+  s = switch -
+  c = checkout
+  r = rebase -i HEAD~10
+  l = log --abbrev-commit --decorate --date=relative --format=format:'%C(red)%h%C(red) —— %C(bold blue)%an%C(red): %C(white)%s%C(red) %C(dim white) %C(bold green)(%ar)%C(red) %C(bold yellow)%d%C(red)'
+  cb = checkout -b
+  wip = !git add --all && git commit -m 'wip'
+  sync = !git checkout main && git pull && git switch -
+  branch = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  main = !git-helpers checkout-main
+  rebase-all = !git-helpers rebase-all
