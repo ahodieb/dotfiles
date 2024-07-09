@@ -6,6 +6,7 @@ else
   ZSH_THEME="powerlevel10k/powerlevel10k"
   plugins=(
     z
+    zsh-autosuggestions
   )
 
   source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
