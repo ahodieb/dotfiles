@@ -11,12 +11,3 @@ ln -s ~/.dotfiles/zsh/zprofile ~/.zprofile
 ln -s ~/.dotfiles/git/gitconfig-global ~/.gitconfig
 
 
-link_vim () {
-  if [ -d "${HOME}/.vim" ]; then
-    rm -rf ~/.vim ~/.vimrc
-  fi
-
-  mkdir ~/.vim
-  ln -s ~/.dotfiles/vim/vimrc.d ~/.vim/vimrc.d
-  ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
-}
