@@ -22,5 +22,5 @@
   wip = !git add --all && git commit -m 'wip'
   sync = !git checkout main && git pull && git switch -
   branch = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-  main = !git-helpers checkout-main
+  main = checkout main 
   rebase-all = !git-helpers rebase-all
