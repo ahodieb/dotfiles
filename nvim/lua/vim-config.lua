@@ -9,3 +9,6 @@ vim.cmd("imap <D-\\> <ESC>gcc")
 vim.cmd("vmap <D-\\> gc")
 vim.keymap.set('n', '<D-s>', ':wa<CR>')      -- Save
 vim.keymap.set('i', '<D-s>', '<ESC>:wa<CR>') -- Save
+
+-- vim.opt.spell = true
+-- vim.opt.spelllang = { "en_us" }
