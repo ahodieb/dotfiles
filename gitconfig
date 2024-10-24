@@ -18,9 +18,10 @@
   c = checkout
   r = rebase -i HEAD~10
   l = log --abbrev-commit --decorate --date=relative --format=format:'%C(red)%h%C(red) —— %C(bold blue)%an%C(red): %C(white)%s%C(red) %C(dim white) %C(bold green)(%ar)%C(red) %C(bold yellow)%d%C(red)'
+  f = fetch
   cb = checkout -b
   wip = !git add --all && git commit -m 'wip'
   sync = !git checkout main && git pull && git switch -
   branch = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-  main = checkout main 
+  main = switch main
   rebase-all = !git-helpers rebase-all
