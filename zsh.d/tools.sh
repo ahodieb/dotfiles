@@ -11,3 +11,8 @@ fi
 if [ -d "/Applications/Fork.app" ]; then
     alias fork="open -a Fork.app ."
 fi
+
+# use nvim
+if type -p nvim > /dev/null; then
+  alias vim=nvim
+fi
