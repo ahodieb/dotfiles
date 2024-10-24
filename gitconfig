@@ -1,5 +1,4 @@
 [core]
-  editor = vim
 	excludesfile = ~/.dotfiles/gitignore
 [pull]
 	rebase = true
