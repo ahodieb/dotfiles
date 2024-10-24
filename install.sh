@@ -6,8 +6,6 @@ set -e
 git -C ~/.dotfiles config user.name "Abdallah Hodieb"
 git -C ~/.dotfiles config user.email "abdallah.hodieb@gmail.com"
 
-ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
-ln -s ~/.dotfiles/zsh/zprofile ~/.zprofile
-ln -s ~/.dotfiles/git/gitconfig-global ~/.gitconfig
-
-
+ln -sf ~/.dotfiles/zshrc ~/.zshrc
+ln -sf ~/.dotfiles/zprofile ~/.zprofile
+ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
